@@ -1,0 +1,244 @@
+%-------------------------
+% Resume in Latex
+% Author : Siddhant Waingade
+% Based off of: https://github.com/SidW111/resume
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\RequirePackage{tikz}
+\RequirePackage{xcolor}
+\RequirePackage{fontawesome}
+\usetikzlibrary{svg.path}
+
+\definecolor{cvblue}{HTML}{0E5484}
+\definecolor{black}{HTML}{130810}
+\definecolor{darkcolor}{HTML}{0F4539}
+\definecolor{cvgreen}{HTML}{3BD80D}
+\definecolor{taggreen}{HTML}{00E278}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{name}{black}
+\colorlet{tagline}{darkcolor}
+\colorlet{heading}{darkcolor}
+\colorlet{headingrule}{cvblue}
+\colorlet{accent}{darkcolor}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\large#1} & \textbf{\small #2} \\
+      \textit{\large#3} & \textit{\small #4} \\
+      
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\newcommand\sbullet[1][.5]{\mathbin{\vcenter{\hbox{\scalebox{#1}{$\bullet$}}}}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+\begin{center}
+    {\Huge \scshape Siddhant Ashok Waingade} \\ \vspace{1pt}
+    Koperkhairane, Navi Mumbai  \\ \vspace{1pt}
+    \small \href{tel:+919372611471}{\raisebox{-0.1\height}\faPhone\ \underline{+91-9372611471}} ~ 
+    \href{mailto:siddhantwainngade@gmail.com}{\raisebox{-0.2\height}\faEnvelope\ \underline{siddhantwainngade@gmail.com}} ~ 
+    \href{https://www.linkedin.com/in/siddhant-waingade-4b3b18238/}{\raisebox{-0.2\height}\faLinkedinSquare\ \underline{Linkedin}}  ~
+    \href{https://github.com/SidW111}{\raisebox{-0.2\height}\faGithub\ \underline{Github}} ~
+    \href{https://leetcode.com/u/sidW111/}{\raisebox{-0.2\height}{\includegraphics[height=0.3cm, width=0.3cm]{leetcode.png}}\ \underline{LeetCode}} ~
+\end{center}
+\vspace{0.5mm}
+
+%-----------EDUCATION-----------
+\vspace{6pt}
+\section{EDUCATION}
+  \resumeSubheading
+    {Terna Engineering College }{2021 – 2025}
+    {B.E - Mechatronics Engineering - \textbf{CGPA} - \textbf{8.82}}{Navi Mumbai, Maharashtra}
+\vspace{6pt}
+\vspace{6pt}
+%------RELEVANT COURSEWORK-------
+\section{SKILLS}
+    \begin{multicols}{6}
+        \begin{itemize}[itemsep=-2pt, parsep=5pt]
+            \item C++
+            \item HTML
+            \item CSS
+            \item JavaScript
+            \item ReactJs
+            \item NextJs
+            \item TailwindCSS
+            \item Node.Js
+            \item Express.Js
+            \item MongoDB
+            \item CAD
+            \item AWS
+        \end{itemize}
+    \end{multicols}
+    \vspace*{2.0\multicolsep}
+
+\vspace{6pt}
+%-----------PROJECTS-----------
+\vspace{6pt}
+\vspace{6pt}
+\section{PROJECTS}
+    \resumeSubHeadingListStart
+    \resumeProjectHeading
+        {\href{https://prescripto-frontend-65lf.onrender.com/}{\textbf{\large{\underline{Prescripto}}} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{React, Express, Node, MongoDB, Render}}}{2023}
+        \vspace{-6pt}
+        \resumeItemListStart
+            \resumeItem{\normalsize{Prescripto - Doctor’s Appointment Management System}}
+            \resumeItem{\normalsize {Frontend:- Developed using React.js, the frontend provides a user-friendly interface for patients and doctors to schedule and manage appointments.}}
+            \resumeItem{\normalsize{Backend:- Built with Node.js and Express.js, the backend handles server-side operations, including API endpoints, database interactions, and authentication processes.}}
+            \resumeItem{\normalsize{Admin Panel:- This section is designed for administrative tasks, allowing administrators to manage doctors, patients, and appointments.}}
+            
+            \resumeItem{\normalsize{ Deployed on Render, ensuring high performance and global accessibility for efficient appointment management.}}
+        \resumeItemListEnd
+        
+    \resumeProjectHeading
+        {\href{https://store-it-tau-one.vercel.app/}{\textbf{\large{\underline{Store-It}}} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{Nextjs, Tailwind CSS, AppWrite, TypeScript, Vercel }}}{2025}
+        \vspace{-6pt}
+        \resumeItemListStart
+            \resumeItem{\normalsize{StoreIt – Simple, Secure Document Storage Solution}}
+            \resumeItem{\normalsize{Built a scalable document management web app using Next.js, Appwrite, and Tailwind CSS.}}
+            \resumeItem{\normalsize{Integrated Appwrite for secure user authentication, file storage, and database management.}}
+            \resumeItem{\normalsize{Developed REST APIs with Next.js to handle file uploads, metadata, and user interactions.}}
+            
+            \resumeItem{\normalsize{Deployed on Vercel, ensuring fast, globally accessible service with optimized performance.}}
+        \resumeItemListEnd
+
+         \resumeProjectHeading
+        {\href{https://github.com/SidW111/Project_Management_System}{\textbf{\large{\underline{Project Management System}}} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{Nextjs, TypeScript, Prisma, Postgres, AWS, Cognito}}}{2025}
+        \vspace{-6pt}
+        \resumeItemListStart
+            \resumeItem{\normalsize{Full-stack web application for managing projects, tasks, and team collaborations.}}
+            \resumeItem{\normalsize{Frontend: Built with Next.js and TypeScript, featuring a dynamic and SEO-friendly interface. Integrated real-time drag-and-drop functionality for task assignments using React DnD.}}
+            \resumeItem{\normalsize{Backend: Utilized Next.js API routes for server-side logic, handling project and task management, as well as real-time updates.}}
+            \resumeItem{\normalsize{Authentication: Integrated AWS Cognito for secure, scalable user authentication, ensuring smooth user sign-ins, registrations, and session management.}}
+            
+            \resumeItem{\normalsize{Database: Leveraged PostgreSQL for structured data storage, and used Prisma for efficient database queries and management.}}
+
+            
+            \resumeItem{\normalsize{Cloud Deployment: Deployed on AWS, ensuring high availability, scalability, and performance.}}
+        \resumeItemListEnd
+
+\vspace{6pt}
+
+\section{GROUP PROJECT}
+    \resumeSubHeadingListStart
+    \resumeProjectHeading
+        {\href{https://myfabrilia.com}{\textbf{\large{\underline{Fabrilia}}} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{React, TailwindCSS, Redux, Firebase}}}{2024}
+        \vspace{0pt}
+        \resumeItemListStart
+            \resumeItem{\normalsize{An Ecommerce Project for curtains supplies.}}
+            \resumeItem{\normalsize{Responsibilities: Created Frontend to dynamically use updated data.}}
+            \resumeItem{\normalsize{Tech: React, TailwindCSS.}}
+        \resumeItemListEnd
+
+\vspace{6pt}
+\vspace{6pt}
+
+%-----------TOOLS-----------
+\section{ACHIEVEMENTS}
+  \resumeSubHeadingListStart
+    \resumeItem{\normalsize{Completed \textbf{Hacktoberfest 2023 organised by Digital Ocean}, merged more than 4 pull requests }}
+  \resumeSubHeadingListEnd
+\vspace{6pt}
+
+\vspace{6pt}
+
+\end{document}
